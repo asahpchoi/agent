@@ -1,0 +1,304 @@
+
+# 2024-09-25 23:18:03.044065
++/add custom/minimax/tts.py
+
+# 2024-09-25 23:18:16.336313
++/ask check the coding
+
+# 2024-09-25 23:19:39.563199
++/ask it should be a text to voice plugin to connect to play.ht, could you change it to connect to minimax api
+
+# 2024-09-25 23:20:12.813514
++apply the change
+
+# 2024-09-25 23:21:31.816783
++quit
+
+# 2024-09-25 23:21:35.593099
++/bye
+
+# 2024-09-25 23:21:39.933976
++/quit
+
+# 2024-09-25 23:29:03.771930
++2024-09-25 23:27:16,875 - ERROR asyncio - Task exception was never retrieved
++future: <Task finished name='Task-79' coro=<ChunkedStream._main_task() done, defined at C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\utils\log.py:13> exception=AttributeError("'str' object has no attribute 'id'")>
++Traceback (most recent call last):
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
++    return await fn(*args, **kwargs)       
++           ^^^^^^^^^^^^^^^^^^^^^^^^^       
++  File "C:\Users\remote\lkagent\custom\minimax\tts.py", line 116, in _main_task       
++    "voice_id": self._opts.voice.id,       
++                ^^^^^^^^^^^^^^^^^^^        
++AttributeError: 'str' object has no attribute 'id'
++2024-09-25 23:27:17,240 - DEBUG livekit.agents.voice_assistant - validated agent reply {"speech_id": "f73d814e586d"}
++2024-09-25 23:27:17,541 - DEBUG livekit.agents.voice_assistant - first LLM token {"speech_id": "f73d814e586d", "elapsed": 0.667} 
++2024-09-25 23:27:17,543 - ERROR custom.minimax - Error in _main_task
++te 'id'
++2024-09-25 23:27:17,545 - DEBUG livekit.agents.voice_assistant - playout finished {"speech_id": "f73d814e586d", "interrupted": false}
++2024-09-25 23:27:17,546 - DEBUG livekit.agents.voice_assistant - committed user transcript {"user_transcript": "Hello. Hello."}
++2024-09-25 23:27:17,546 - DEBUG livekit.agents.voice_assistant - committed agent speech {"agent_transcript": "", "interrupted": false, "speech_id": "f73d814e586d"}
++2024-09-25 23:27:45,079 - INFO livekit.agents - shutting down worker {"id": "AW_XzQZzyCkQvTa"}
++2024-09-25 23:27:45,079 - DEBUG livekit.agents - shutting down job task {"reason": "", "user_initiated": false}
++2024-09-25 23:27:45,080 - DEBUG livekit.agents - job exiting {"reason": "", "tid": 46204, "job_id": "AJ_Kzhm5emzwPFp"}
++2024-09-25 23:27:45,421 - DEBUG livekit.agents - http_session(): closing the httpclient ctx 
++2024-09-25 23:27:45,443 - ERROR asyncio - Task was destroyed but it is pending!
++task: <Task pending name='job_entrypoint' coro=<entrypoint() running at C:\Users\remote\lkagent\assistant.py:135> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[_start_job.<locals>._run_job_task.<locals>.<lambda>() at C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\ipc\job_main.py:148, _start_job.<locals>._run_job_task.<locals>.log_exception() at C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\ipc\job_main.py:150]> 
++2024-09-25 23:27:45,443 - ERROR asyncio - Task exception was never retrieved
++future: <Task finished name='Task-103' coro=<ChunkedStream._main_task() done, defined at C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\utils\log.py:13> exception=AttributeError("'str' object has no attribute 'id'")>
++Traceback (most recent call last):
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
++    return await fn(*args, **kwargs)
++           ^^^^^^^^^^^^^^^^^^^^^^^^^
++  File "C:\Users\remote\lkagent\custom\minimax\tts.py", line 116, in _main_task
++    "voice_id": self._opts.voice.id,
++                ^^^^^^^^^^^^^^^^^^^
++AttributeError: 'str' object has no attribute 'id'
++PS C:\Users\remote\lkagent>
+
+# 2024-09-25 23:29:22.697727
++/add custom/minimax/tts.py
+
+# 2024-09-25 23:29:26.363623
++2024-09-25 23:27:16,875 - ERROR asyncio - Task exception was never retrieved
++future: <Task finished name='Task-79' coro=<ChunkedStream._main_task() done, defined at C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\utils\log.py:13> exception=AttributeError("'str' object has no attribute 'id'")>
++Traceback (most recent call last):
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
++    return await fn(*args, **kwargs)       
++           ^^^^^^^^^^^^^^^^^^^^^^^^^       
++  File "C:\Users\remote\lkagent\custom\minimax\tts.py", line 116, in _main_task       
++    "voice_id": self._opts.voice.id,       
++                ^^^^^^^^^^^^^^^^^^^        
++AttributeError: 'str' object has no attribute 'id'
++2024-09-25 23:27:17,240 - DEBUG livekit.agents.voice_assistant - validated agent reply {"speech_id": "f73d814e586d"}
++2024-09-25 23:27:17,541 - DEBUG livekit.agents.voice_assistant - first LLM token {"speech_id": "f73d814e586d", "elapsed": 0.667} 
++2024-09-25 23:27:17,543 - ERROR custom.minimax - Error in _main_task
++te 'id'
++2024-09-25 23:27:17,545 - DEBUG livekit.agents.voice_assistant - playout finished {"speech_id": "f73d814e586d", "interrupted": false}
++2024-09-25 23:27:17,546 - DEBUG livekit.agents.voice_assistant - committed user transcript {"user_transcript": "Hello. Hello."}
++2024-09-25 23:27:17,546 - DEBUG livekit.agents.voice_assistant - committed agent speech {"agent_transcript": "", "interrupted": false, "speech_id": "f73d814e586d"}
++2024-09-25 23:27:45,079 - INFO livekit.agents - shutting down worker {"id": "AW_XzQZzyCkQvTa"}
++2024-09-25 23:27:45,079 - DEBUG livekit.agents - shutting down job task {"reason": "", "user_initiated": false}
++2024-09-25 23:27:45,080 - DEBUG livekit.agents - job exiting {"reason": "", "tid": 46204, "job_id": "AJ_Kzhm5emzwPFp"}
++2024-09-25 23:27:45,421 - DEBUG livekit.agents - http_session(): closing the httpclient ctx 
++2024-09-25 23:27:45,443 - ERROR asyncio - Task was destroyed but it is pending!
++task: <Task pending name='job_entrypoint' coro=<entrypoint() running at C:\Users\remote\lkagent\assistant.py:135> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[_start_job.<locals>._run_job_task.<locals>.<lambda>() at C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\ipc\job_main.py:148, _start_job.<locals>._run_job_task.<locals>.log_exception() at C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\ipc\job_main.py:150]> 
++2024-09-25 23:27:45,443 - ERROR asyncio - Task exception was never retrieved
++future: <Task finished name='Task-103' coro=<ChunkedStream._main_task() done, defined at C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\utils\log.py:13> exception=AttributeError("'str' object has no attribute 'id'")>
++Traceback (most recent call last):
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
++    return await fn(*args, **kwargs)
++           ^^^^^^^^^^^^^^^^^^^^^^^^^
++  File "C:\Users\remote\lkagent\custom\minimax\tts.py", line 116, in _main_task
++    "voice_id": self._opts.voice.id,
++                ^^^^^^^^^^^^^^^^^^^
++AttributeError: 'str' object has no attribute 'id'
++PS C:\Users\remote\lkagent>
+
+# 2024-09-25 23:31:04.594778
++2024-09-25 23:30:37,677 - ERROR livekit.agents - unhandled exception while running the job task
++Traceback (most recent call last):
++  File "C:\Users\remote\lkagent\assistant.py", line 80, in entrypoint
++    voice = Voice(id=voice, name=voice, voice_engine=TTSEngines.MINIMAX)
++                                                     ^^^^^^^^^^^^^^^^^^
++  File "C:\Users\remote\miniconda3\Lib\typing.py", line 1203, in __getattr__
++    return getattr(self.__origin__, attr)
++           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
++  File "C:\Users\remote\miniconda3\Lib\typing.py", line 489, in __getattr__
++    raise AttributeError(item)
++AttributeError: MINIMAX
+
+# 2024-09-25 23:32:11.513061
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
++    return await fn(*args, **kwargs)
++           ^^^^^^^^^^^^^^^^^^^^^^^^^
++  File "C:\Users\remote\lkagent\custom\minimax\tts.py", line 135, in _main_task
++    response_json = await resp.json()
++                    ^^^^^^^^^^^^^^^^^
++  File "C:\Users\remote\lkagent\Lib\site-packages\aiohttp\client_reqrep.py", line 1240, in json
++    raise ContentTypeError(
++aiohttp.client_exceptions.ContentTypeError: 200, message='Attempt to decode JSON with unexpected mimetype: audio/mpeg', url='https://api.minimax.chat/v1/text_to_speech'
+
+# 2024-09-25 23:35:24.540128
++2024-09-25 23:35:00,601 - ERROR livekit.agents.voice_assistant - Error in _capture_task
++Traceback (most recent call last):
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
++    return await fn(*args, **kwargs)
++           ^^^^^^^^^^^^^^^^^^^^^^^^^
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\voice_assistant\agent_playout.py", line 148, in _capture_task
++    await self._audio_source.capture_frame(frame)
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\rtc\audio_source.py", line 123, in capture_frame
++    raise Exception(cb.capture_audio_frame.error)
+
+# 2024-09-25 23:36:47.849993
++2024-09-25 23:36:11,052 - ERROR livekit.agents.voice_assistant - Error in _capture_task
++Traceback (most recent call last):
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
++    return await fn(*args, **kwargs)
++           ^^^^^^^^^^^^^^^^^^^^^^^^^
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\voice_assistant\agent_playout.py", line 148, in _capture_task
++    await self._audio_source.capture_frame(frame)
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\rtc\audio_source.py", line 123, in capture_frame
++    raise Exception(cb.capture_audio_frame.error)
++Exception: an RtcError occured: InvalidState - sample_rate and num_channels don't match
+
+# 2024-09-25 23:38:03.569747
++2024-09-25 23:37:46,049 - ERROR livekit.agents.voice_assistant - Error in _capture_task
++Traceback (most recent call last):
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
++    return await fn(*args, **kwargs)
++           ^^^^^^^^^^^^^^^^^^^^^^^^^
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\voice_assistant\agent_playout.py", line 148, in _capture_task
++    await self._audio_source.capture_frame(frame)
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\rtc\audio_source.py", line 123, in capture_frame
++    raise Exception(cb.capture_audio_frame.error)
++Exception: an RtcError occured: InvalidState - sample_rate and num_channels don't match
+
+# 2024-09-25 23:39:26.121185
++2024-09-25 23:38:42,543 - ERROR livekit.agents - unhandled exception while running the job task
++Traceback (most recent call last):
++  File "C:\Users\remote\lkagent\assistant.py", line 80, in entrypoint
++    tts=minimax.TTS(voice="alloy"),
++        ^^^^^^^^^^^^^^^^^^^^^^^^^^
++  File "C:\Users\remote\lkagent\custom\minimax\tts.py", line 82, in __init__
++    self._opts = _TTSOptions(
++                 ^^^^^^^^^^^^
++TypeError: _TTSOptions.__init__() got an unexpected keyword argument 'num_channels'
+
+# 2024-09-25 23:40:22.274217
++2024-09-25 23:39:58,200 - ERROR livekit.agents.voice_assistant - Error in _capture_task
++Traceback (most recent call last):
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
++    return await fn(*args, **kwargs)
++           ^^^^^^^^^^^^^^^^^^^^^^^^^
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\voice_assistant\agent_playout.py", line 148, in _capture_task
++    await self._audio_source.capture_frame(frame)
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\rtc\audio_source.py", line 123, in capture_frame
++    raise Exception(cb.capture_audio_frame.error)
++Exception: an RtcError occured: InvalidState - sample_rate and num_channels don't match
+
+# 2024-09-25 23:41:24.182831
++2024-09-25 23:41:02,835 - ERROR livekit.agents - unhandled exception while running the job task 
++Traceback (most recent call last):
++  File "C:\Users\remote\lkagent\assistant.py", line 80, in entrypoint
++    tts=minimax.TTS(voice="alloy"),
++        ^^^^^^^^^^^^^^^^^^^^^^^^^^
++  File "C:\Users\remote\lkagent\custom\minimax\tts.py", line 64, in __init__
++    self.sample_rate = sample_rate
++    ^^^^^^^^^^^^^^^^
++AttributeError: property 'sample_rate' of 'TTS' object has no setter
+
+# 2024-09-25 23:42:12.388074
++2024-09-25 23:41:50,380 - ERROR custom.minimax - Error in _main_task: 'AudioByteStream' object has no attribute 'sample_rate'
++Traceback (most recent call last):
++  File "C:\Users\remote\lkagent\custom\minimax\tts.py", line 122, in _main_task
++    logger.debug(f"AudioByteStream created with sample_rate: {stream.sample_rate}, channels: {stream.num_channels}")
++                                                              ^^^^^^^^^^^^^^^^^^
++AttributeError: 'AudioByteStream' object has no attribute 'sample_rate'. Did you mean: '_sample_rate'?
++2024-09-25 23:41:50,383 - ERROR custom.minimax - Error in _main_task
++Traceback (most recent call last):
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
++    return await fn(*args, **kwargs)
++           ^^^^^^^^^^^^^^^^^^^^^^^^^
++  File "C:\Users\remote\lkagent\custom\minimax\tts.py", line 122, in _main_task
++    logger.debug(f"AudioByteStream created with sample_rate: {stream.sample_rate}, channels: {stream.num_channels}")
++                                                              ^^^^^^^^^^^^^^^^^^
++AttributeError: 'AudioByteStream' object has no attribute 'sample_rate'. Did you mean: '_sample_rate'?
++
+
+# 2024-09-25 23:43:39.158928
++2024-09-25 23:43:14,908 - DEBUG asyncio - Using proactor: IocpProactor 
++2024-09-25 23:43:14,909 - DEBUG livekit.agents - initializing job runner {"tid": 28812}
++2024-09-25 23:43:14,909 - DEBUG livekit.agents - job runner initialized {"tid": 28812}
++Room name: 9t6hw
++2024-09-25 23:43:15,927 - INFO custom.minimax - Initializing TTS with sample_rate: 48000, channels: 1 
++2024-09-25 23:43:16,036 - DEBUG livekit.agents - http_session(): creating a new httpclient ctx 
++2024-09-25 23:43:17,035 - INFO custom.minimax - Starting _main_task with sample_rate: 48000, channels: 1 
++2024-09-25 23:43:17,036 - DEBUG custom.minimax - AudioByteStream created with sample_rate: 48000, channels: 1
++2024-09-25 23:43:17,036 - DEBUG custom.minimax - Sending request to MiniMax API: {'text': 'Hi there! How can I help?', 'model': 'speech-01', 'voice_id': 'alloy', 'group_id': '1743503684043542894', 'audio_format': 'MP3', 'sample_rate': 48000}
++2024-09-25 23:43:21,429 - DEBUG custom.minimax - Received audio content of length: 24798 bytes 
++2024-09-25 23:43:21,482 - WARNING root - Error decoding packet, skipping: [Errno 1094995529] Invalid data found when processing input 
++2024-09-25 23:43:21,484 - INFO custom.minimax - Audio synthesis completed for text: Hi there! How can I help?...
++2024-09-25 23:43:21,484 - DEBUG livekit.agents.voice_assistant - received first TTS frame {"speech_id": "4d6d37939b2f", "elapsed": 4.449, "streamed": false}
++2024-09-25 23:43:21,484 - DEBUG livekit.agents.voice_assistant - started playing the first frame {"speech_id": "4d6d37939b2f"}
++2024-09-25 23:43:21,486 - ERROR livekit.agents.voice_assistant - Error in _capture_task
++Traceback (most recent call last):
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
++    return await fn(*args, **kwargs)
++           ^^^^^^^^^^^^^^^^^^^^^^^^^
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\voice_assistant\agent_playout.py", line 148, in _capture_task
++    await self._audio_source.capture_frame(frame)
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\rtc\audio_source.py", line 123, in capture_frame
++    raise Exception(cb.capture_audio_frame.error)
++Exception: an RtcError occured: InvalidState - sample_rate and num_channels don't match
++2024-09-25 23:43:21,489 - DEBUG livekit.agents.voice_assistant - playout finished {"speech_id": "4d6d37939b2f", "interrupted": false}
++2024-09-25 23:43:21,490 - DEBUG livekit.agents.voice_assistant - committed agent speech {"agent_transcript": " Hi there! How can I help?", "interrupted": false, "speech_id": "4d6d37939b2f"}
+
+# 2024-09-25 23:44:23.662545
++2024-09-25 23:44:09,037 - ERROR custom.minimax - Error in _main_task: 'ChunkedStream' object has no attribute '_sample_rate' 
++Traceback (most recent call last):
++  File "C:\Users\remote\lkagent\custom\minimax\tts.py", line 118, in _main_task
++    logger.info(f"Starting _main_task with sample_rate: {self._sample_rate}, channels: {self._num_channels}")
++                                                         ^^^^^^^^^^^^^^^^^
++AttributeError: 'ChunkedStream' object has no attribute '_sample_rate'
++2024-09-25 23:44:09,040 - ERROR custom.minimax - Error in _main_task
++Traceback (most recent call last):
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
++    return await fn(*args, **kwargs)
++           ^^^^^^^^^^^^^^^^^^^^^^^^^
++  File "C:\Users\remote\lkagent\custom\minimax\tts.py", line 118, in _main_task
++    logger.info(f"Starting _main_task with sample_rate: {self._sample_rate}, channels: {self._num_channels}")
++                                                         ^^^^^^^^^^^^^^^^^
++AttributeError: 'ChunkedStream' object has no attribute '_sample_rate'
+
+# 2024-09-25 23:45:27.537989
++Traceback (most recent call last):
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
++    return await fn(*args, **kwargs)
++           ^^^^^^^^^^^^^^^^^^^^^^^^^
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\voice_assistant\agent_playout.py", line 148, in _capture_task
++    await self._audio_source.capture_frame(frame)
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\rtc\audio_source.py", line 123, in capture_frame
++    raise Exception(cb.capture_audio_frame.error)
++Exception: an RtcError occured: InvalidState - sample_rate and num_channels don't match
+
+# 2024-09-25 23:50:29.112224
++2024-09-25 23:49:03,459 - DEBUG asyncio - Using proactor: IocpProactor 
++2024-09-25 23:49:03,463 - DEV  livekit.agents - Watching C:\Users\remote\lkagent
++2024-09-25 23:49:04,649 - DEBUG asyncio - Using proactor: IocpProactor 
++2024-09-25 23:49:04,657 - INFO livekit.agents - starting worker {"version": "0.9.0"}
++2024-09-25 23:49:06,197 - INFO livekit.agents - registered worker {"id": "AW_Nc8e64VntdiZ", "server_info": "edition: Cloud\nversion: \"1.7.2\"\nprotocol: 15\nregion: \"Japan\"\nnode_id: \"NC_OTOKYO1A_ksHmV7xGPpEh\"\n"}
++2024-09-25 23:49:11,561 - INFO livekit.agents - received job request {"job_request": "id: \"AJ_jTXrmR3XvMq9\"\nroom {\n  sid: \"RM_fEn2Y6fuix8U\"\n  name: \"x788fs\"\n  empty_timeout: 300\n  creation_time: 1727279350\n  enabled_codecs {\n    mime: \"video/H264\"\n  }\n  enabled_codecs {\n    mime: \"video/VP8\"\n  }\n  enabled_codecs {\n    mime: \"video/VP9\"\n  }\n  enabled_codecs {\n    mime: \"video/AV1\"\n  }\n  enabled_codecs {\n    mime: \"audio/red\"\n  }\n  enabled_codecs {\n    mime: \"audio/opus\"\n  }\n  version {\n    unix_micro: 1727279350568671\n  }\n  departure_timeout: 20\n}\nstate {\n  updated_at: 1727279351668350258\n}\n", "resuming": false, "agent_name": ""}
++2024-09-25 23:49:11,652 - DEBUG asyncio - Using proactor: IocpProactor 
++2024-09-25 23:49:11,654 - DEBUG livekit.agents - initializing job runner {"tid": 34232}
++2024-09-25 23:49:11,655 - DEBUG livekit.agents - job runner initialized {"tid": 34232}
++Room name: x788fs
++2024-09-25 23:49:12,613 - INFO custom.minimax - Initializing TTS with sample_rate: 16000, channels: 1 
++2024-09-25 23:49:12,729 - DEBUG livekit.agents - http_session(): creating a new httpclient ctx 
++2024-09-25 23:49:13,714 - INFO custom.minimax - Starting _main_task with sample_rate: 16000, channels: 1 
++2024-09-25 23:49:13,715 - DEBUG custom.minimax - AudioByteStream created with sample_rate: 16000, channels: 1
++2024-09-25 23:49:13,715 - DEBUG custom.minimax - Sending request to MiniMax API: {'text': 'Hi there! How can I help?', 'model': 'speech-01', 'voice_id': 'alloy', 'group_id': '1743503684043542894', 'audio_format': 'MP3', 'sample_rate': 16000}
++2024-09-25 23:49:18,455 - DEBUG custom.minimax - Received audio content of length: 29550 bytes 
++2024-09-25 23:49:18,516 - WARNING root - Error decoding packet, skipping: [Errno 1094995529] Invalid data found when processing input 
++2024-09-25 23:49:18,518 - INFO custom.minimax - Audio synthesis completed for text: Hi there! How can I help?...
++2024-09-25 23:49:18,518 - DEBUG livekit.agents.voice_assistant - received first TTS frame {"speech_id": "08847409dbec", "elapsed": 4.804, "streamed": false}
++2024-09-25 23:49:18,518 - DEBUG livekit.agents.voice_assistant - started playing the first frame {"speech_id": "08847409dbec"}
++2024-09-25 23:49:18,520 - ERROR livekit.agents.voice_assistant - Error in _capture_task
++Traceback (most recent call last):
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
++    return await fn(*args, **kwargs)
++           ^^^^^^^^^^^^^^^^^^^^^^^^^
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\agents\voice_assistant\agent_playout.py", line 148, in _capture_task
++    await self._audio_source.capture_frame(frame)
++  File "C:\Users\remote\lkagent\Lib\site-packages\livekit\rtc\audio_source.py", line 123, in capture_frame
++    raise Exception(cb.capture_audio_frame.error)
++Exception: an RtcError occured: InvalidState - sample_rate and num_channels don't match
++2024-09-25 23:49:18,523 - DEBUG livekit.agents.voice_assistant - playout finished {"speech_id": "08847409dbec", "interrupted": false}
++2024-09-25 23:49:18,524 - DEBUG livekit.agents.voice_assistant - committed agent speech {"agent_transcript": " Hi there! How can I help?", "interrupted": false, "speech_id": "08847409dbec"}
++
+
+# 2024-09-26 00:02:28.788773
++/add custom/minimax/tts.py
+
+# 2024-09-26 00:02:57.528594
++2024-09-26 00:00:29,183 - DEBUG custom.minimax - contnet: b'ID3\x04\x00\x00\x00\x00\x01$TXXX\x00\x00\x00w\x00\x00\x03aigc\x00{"aigc": {"Label": "1", "ContentProducer": "HUABABSpeech7E01", "ProduceID": "0343669bb0fc3bceb5e55b8c2e876b71"}}\x00TSSE\x00\x00\x0
